@@ -1,0 +1,5 @@
+<div style="border: 1;border-color: black;border-style: solid; padding: 5px; margin: 5px;">
+    <p>Soy {{soy}}</p>
+    <button  *ngFor="let componente of elements" (click)="emitir('Mensaje desde '+soy+' a '+componente,componente)">Enviar a {{componente}}</button>
+    <div style="margin-top: 15px;">Recibido: {{storedMessages}}</div>
+</div>
